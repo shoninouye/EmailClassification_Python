@@ -62,4 +62,5 @@ Here is the breakdown of our correct and incorrect classifications from the test
 
 ## Overview of Decision Trees
 
-
+- **Training Set** - This component is used to *train* the algorithm to discover predicitve relationships between the dependent variables and independent variable. In our example we used 75% of the data set (chosen randomly).
+- **Test Set** - This component is what is left out of the algorithm and used to asses how well our **decision tree** performs on data it hasn't seen yet. In our case the rest of the data set, so the 25% that was not chosen to be in the **training set** 
