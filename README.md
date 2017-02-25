@@ -35,5 +35,8 @@ In order match the values in the data set to their corresponding labels, we need
 
 
 ## Overview of Decision Trees
-For in depth information of 
+For our model we used Decision Trees. A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm. We divided our data set into a training set and test and used decision tree classification algorithm in order to determine if an email classifed as spam or non-spam. 
 
+
+
+We applied our algorithm to the test set to get a 92% accurancy of our model. 
