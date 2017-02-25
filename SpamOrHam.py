@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import roc_curve
 from sklearn.metrics import auc
+from sklearn.tree import export_graphviz
 import matplotlib.pyplot as plt
 
 # Column titles for the data set
@@ -55,6 +56,14 @@ indices = np.argsort(importances)[::-1]
 #Prints the top 10 predictors
 for i in range(10):
     print(columns[indices[i]], importances[indices[i]])
+
+#Creates a .dot file to visualize the Decision Tree
+columnsInd = columns[0:len(columns)-1]
+
+with open('spam.dot','w') as f:
+    f = export_graphviz(fit, out_file = f,
+                        feature_names = columnsInd,
+                        rounded = True)
 
 #Accuracy of our model on the test set    
 accuracy = fit.score(test_set, test_capital_set['capital_run_length_total'])
