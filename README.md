@@ -19,6 +19,11 @@
 ## Abstract
 This project focuses on the **classification** of emails as either spam or non-spam using **decision trees**. The [data set](https://archive.ics.uci.edu/ml/datasets/Spambase) for this project contains a list of spam and non-spam emails with their **attributes** in terms of frequency of certain words and characters. We used 75% of the data set to train the decision tree and applied that model on the remaining 25% of the data set to test the model accuracy. When training our decision tree, we focused on the importance of having minimal false positives as possible (good email marked as spam).
 
+## Overview of Decision Trees
+
+- **Training Set** - This component is used to *train* the algorithm to discover predicitve relationships between the dependent variables and independent variable. In our example we used 75% of the data set (chosen randomly).
+- **Test Set** - This component is what is left out of the algorithm and used to asses how well our **decision tree** performs on data it hasn't seen yet. In our case the rest of the data set, so the 25% that was not chosen to be in the **training set** 
+
 ## Data Wrangling
 In order match the values in the data set to their corresponding labels, we needed to create a list of column names. The names are given on the [data set description](https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.names) for this project. We took these labels and set it as a list of columns in our script.
 
@@ -32,6 +37,9 @@ In order match the values in the data set to their corresponding labels, we need
                 'word_freq_edu','word_freq_table','word_freq_conference','char_freq_;','char_freq_(','char_freq_[','char_freq_!',
                 'char_freq_$','char_freq_#','capital_run_length_average','capital_run_length_longest','capital_run_length_total']
 ## Data Analysis
+This is the decision tree.
+![alt-title](Images/DecisionTree.png)
+
 We found the 10 most important predictors for our Decision Tree Classifier algorithm.  It seems that the most important predictor by far is the use of exclamation marks.
 
 | Predictor | Importance |
@@ -58,8 +66,5 @@ Here is the breakdown of our correct and incorrect classifications from the test
 |Predicted Not Spam | 633 | 48 |
 |Predicted Spam | 43 | 427 |
     
- 
+ ![alt-title](Images/ROC_Curve.png)
 
-## Overview of Decision Trees
-![alt-title](Images/DecisionTree.png)
-![alt-title](Images/ROC_Curve.png)
