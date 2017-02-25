@@ -61,5 +61,5 @@ Here is the breakdown of our correct and incorrect classifications from the test
  
 
 ## Overview of Decision Trees
-
-![alt-title](SpamOrHam Images/ROC_Curve.png)
+![alt-title](Images/DecisionTree.png)
+![alt-title](Images/ROC_Curve.png)
