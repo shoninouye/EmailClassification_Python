@@ -32,7 +32,33 @@ In order match the values in the data set to their corresponding labels, we need
                 'word_freq_edu','word_freq_table','word_freq_conference','char_freq_;','char_freq_(','char_freq_[','char_freq_!',
                 'char_freq_$','char_freq_#','capital_run_length_average','capital_run_length_longest','capital_run_length_total']
 ## Data Analysis
+We found the 10 most important predictors for our Decision Tree Classifier algorithm.  It seems that the most important predictor by far is the use of excalamation marks.
 
+| Predictor | Importance |
+|------------|------------|
+|char_freq_! | 0.334817369007 |
+| word_freq_over | 0.159363276944 |
+| char_freq_[ | 0.0890565948252 |
+| word_freq_money | 0.055601149615 |
+| capital_run_length_longest | 0.0418640694781 |
+| word_freq_addresses | 0.0336232868801 |
+| capital_run_length_average | 0.0288015387955 |
+| char_freq_# | 0.0261924346351 |
+| word_freq_hpl | 0.0260389190479 |
+|word_freq_3d | 0.0238941385947 |
+
+Here are the accuracy and error rate of our algorithm on the test set we created:
+   * Accuracy: 0.920938314509
+   * Error Rate: 0.0790616854909
+
+Here is the breakdown of our correct and incorrect classifications from the test set:
+    
+|                  | Was Not Spam | Was Spam |
+|------------------|--------------|----------|
+|Predicted Not Spam | 633 | 48 |
+|Predicted Spam | 43 | 427 |
+    
+ 
 
 ## Overview of Decision Trees
 
