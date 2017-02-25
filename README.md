@@ -3,8 +3,8 @@
 ## Spam Email Classification with Decision Trees in Python
 
 # Table of Contents
-* Abstract 
 * Contributors
+* Abstract
 * Explanation of Data Wrangling Process
 * Explanation of Data Analysis Process
 * Brief Overview of Decision Trees
