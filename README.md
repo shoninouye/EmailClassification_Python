@@ -32,7 +32,7 @@ In order match the values in the data set to their corresponding labels, we need
                 'word_freq_edu','word_freq_table','word_freq_conference','char_freq_;','char_freq_(','char_freq_[','char_freq_!',
                 'char_freq_$','char_freq_#','capital_run_length_average','capital_run_length_longest','capital_run_length_total']
 ## Data Analysis
-We found the 10 most important predictors for our Decision Tree Classifier algorithm.  It seems that the most important predictor by far is the use of excalamation marks.
+We found the 10 most important predictors for our Decision Tree Classifier algorithm.  It seems that the most important predictor by far is the use of exclamation marks.
 
 | Predictor | Importance |
 |------------|------------|
