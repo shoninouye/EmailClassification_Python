@@ -5,9 +5,9 @@
 # Table of Contents
 * Contributors
 * Abstract
+* Brief Overview of Decision Trees
 * Explanation of Data Wrangling Process
 * Explanation of Data Analysis Process
-* Brief Overview of Decision Trees
 
 ## Contributors
 * Shon Inouye
